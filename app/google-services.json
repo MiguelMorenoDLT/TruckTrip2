@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "474379858036",
+    "project_id": "trcuktrip2",
+    "storage_bucket": "trcuktrip2.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:474379858036:android:f8dc905abb2760a67e2121",
+        "android_client_info": {
+          "package_name": "co.edu.unipiloto.trucktrip2"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "474379858036-71pcgeat2r6rjbi864v7iergtarmu4e0.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "co.edu.unipiloto.trucktrip2",
+            "certificate_hash": "dd08fc2f481ca0f845fad8ddc8d84c05085114ee"
+          }
+        },
+        {
+          "client_id": "474379858036-6i0ckudi9bvurqalsv1teoevriur8s7p.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAVUR3uQTcQxR1Iq41s4wScoJ9m_cNP6zs"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "474379858036-6i0ckudi9bvurqalsv1teoevriur8s7p.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
