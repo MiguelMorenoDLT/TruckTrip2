@@ -66,12 +66,19 @@
                 android:layout_width="8dp"
                 android:layout_height="wrap_content" />
 
-            <Button
-                android:id="@+id/TripButton"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="trips" />
         </LinearLayout>
+
+        <Button
+            android:id="@+id/TripButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="trips" />
+
+        <Button
+            android:id="@+id/ReportLocationButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Report location" />
 
         <LinearLayout
             android:layout_width="match_parent"
