@@ -4,16 +4,27 @@ import android.content.Context
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.widget.TextView
 import com.google.firebase.auth.FirebaseAuth
+import com.google.firebase.firestore.FirebaseFirestore
 import kotlinx.android.synthetic.main.activity_registration.*
 import kotlinx.android.synthetic.main.activity_registration.cerrarButton
 import kotlinx.android.synthetic.main.activity_truck_manager.*
 
 class TruckManager : AppCompatActivity() {
 
+    val db = FirebaseFirestore.getInstance()
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_truck_manager)
+
+        db.collection("Status").get().addOnSuccessListener { basedatos ->
+            for (documento in basedatos ){
+                val Status = findViewById<TextView>(R.id.StatusLoadTextView)
+                Status.text = documento.get("Status").toString()
+            }
+        }
 
 
         tripsButton.setOnClickListener(){

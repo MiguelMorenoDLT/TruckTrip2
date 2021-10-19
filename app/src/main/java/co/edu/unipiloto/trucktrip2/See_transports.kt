@@ -82,15 +82,16 @@ class See_transports : AppCompatActivity() {
 
             var conductor : String = SpinnerConductor.selectedItem.toString()
 
-
             var correo : String = ""
             var nombre = (conductor.split(" ")[0])
-            var apellido = (conductor.split(" ")[1])
+            var apellido = (conductor.split(" ")[2])
+
+
             //Usuario
             db.collection("users").get().addOnSuccessListener { basedatos ->
                 for (documento in basedatos) {
-                    if (documento.get("Primary_Key")?.equals("Conductor") == true && documento.get("First_name")?.equals(nombre) == true
-                        && documento.get("Last_name")?.equals(apellido) == true){
+                    println("Este es la primary key "+documento.get("Primary_Key"))
+                    if (documento.get("Primary_Key")?.equals("Conductor") == true){
                         correo = documento.id
                     }
                 }

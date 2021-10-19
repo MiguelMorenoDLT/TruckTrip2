@@ -1,5 +1,6 @@
 package co.edu.unipiloto.trucktrip2
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.ArrayAdapter
@@ -50,6 +51,8 @@ class View_Loadout : AppCompatActivity() {
                 )
             )
             Toast.makeText(this, "Solicitud Realizada", Toast.LENGTH_SHORT).show();
+            val intent = Intent(this, Loadout::class.java)
+            startActivity(intent)
         }
 
     }

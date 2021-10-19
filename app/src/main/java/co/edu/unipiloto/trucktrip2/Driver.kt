@@ -26,9 +26,9 @@ class Driver : AppCompatActivity() {
         db.collection("TripDriver").get().addOnSuccessListener { basedatos ->
             for (documento in basedatos ){
 
-                DriverText.text = "Conductor: " + documento.get("Name_Driver").toString() + " " + documento.get("Last_Name_Driver").toString()
-                DriverTruck.text = "Camión: " + documento.get("Truck").toString() + " " + documento.get("Loading_Capacity").toString()
-                DriverLoadout.text = "Carga: " + documento.get("Name_Load").toString()
+                DriverText.text = "Driver: " + documento.get("Name_Driver").toString() + " " + documento.get("Last_Name_Driver").toString()
+                DriverTruck.text = "Truck: " + documento.get("Truck").toString() + " " + documento.get("Loading_Capacity").toString()
+                DriverLoadout.text = "Load: " + documento.get("Name_Load").toString()
             }
         }
 
