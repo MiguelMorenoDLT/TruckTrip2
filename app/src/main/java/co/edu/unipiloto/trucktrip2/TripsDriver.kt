@@ -32,7 +32,7 @@ class TripsDriver : AppCompatActivity() {
                 db.collection("Status").document().set(
                     hashMapOf(
                         "Id" to email,
-                        "Status" to "Status Load: Pickup",
+                        "Status" to "Status Load: On the way",
                     )
                 )
                 val intent = Intent(this, Driver::class.java)
