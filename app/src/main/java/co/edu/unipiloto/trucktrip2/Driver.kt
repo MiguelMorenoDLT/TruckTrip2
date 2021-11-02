@@ -37,6 +37,11 @@ class Driver : AppCompatActivity() {
             startActivity(intent)
         }
 
+        ReportLocationButton.setOnClickListener{
+            val intent = Intent(this, StatusActivityActivity::class.java)
+            startActivity(intent)
+        }
+
         cerrarButton.setOnClickListener{
 
             val prefs = getSharedPreferences(getString(R.string.pr), Context.MODE_PRIVATE).edit()

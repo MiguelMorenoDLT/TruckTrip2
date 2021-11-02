@@ -44,5 +44,10 @@ class Loadout : AppCompatActivity() {
             val intent = Intent(this, CreateLoad::class.java)
             startActivity(intent)
         }
+
+        locationButton.setOnClickListener {
+            val intent = Intent(this, MapsActivity::class.java)
+            startActivity(intent)
+        }
     }
 }

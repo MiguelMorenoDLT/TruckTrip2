@@ -7,6 +7,7 @@ import android.widget.TextView
 import com.google.firebase.auth.ktx.auth
 import com.google.firebase.firestore.FirebaseFirestore
 import com.google.firebase.ktx.Firebase
+import kotlinx.android.synthetic.main.activity_driver.*
 import kotlinx.android.synthetic.main.activity_trips_driver.*
 
 
@@ -35,10 +36,12 @@ class TripsDriver : AppCompatActivity() {
                         "Status" to "Status Load: On the way",
                     )
                 )
-                val intent = Intent(this, Driver::class.java)
-                startActivity(intent)
             }
+            val intent = Intent(this, Driver::class.java)
+            startActivity(intent)
         }
+
+
     }
     private fun Info (email: String){
 
@@ -56,4 +59,5 @@ class TripsDriver : AppCompatActivity() {
             }
         }
     }
+
 }
